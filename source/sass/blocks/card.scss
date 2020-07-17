@@ -1,0 +1,49 @@
+.card {
+  padding: 10px;
+
+  border-radius: 7px;
+  border: 1px solid $white;
+  background-color: $secondary-color-1;
+
+  :focus,
+  &:hover,
+  &:active {
+    border-color: $primary-color-2;
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.card__caption {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.card__link {
+  @include hover();
+  display: block;
+
+  text-decoration: none;
+  text-align: center;
+}

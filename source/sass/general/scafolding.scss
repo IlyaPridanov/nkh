@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  background-color: $primary-color-1;
 }
 
 *,
@@ -46,13 +48,4 @@ img {
   display: none;
 }
 
-@media(max-width:992px) {
-  .js-close {
-    transform-origin: 0 0;
-    transform: scaleY(0);
-    transition: all .2s ease-in;
-  
-    opacity: 0;
-  }  
-}
 
