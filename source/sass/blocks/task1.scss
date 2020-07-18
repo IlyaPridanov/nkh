@@ -4,43 +4,31 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  height: 300vh;
+  margin-right: -10px;
 }
 
 .task1__item {
-  flex: 1 0 calc((100% - 30px)/4);
-
   margin-right: 10px;
   margin-bottom: 10px;
+  width: 250px;
+  max-width: 100%;
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  &--test {
+    align-self: flex-start;
   }
 }
 
 @media(max-width:1050px) {
+  .task1__list {
+    display: block;
+  }
+
   .task1__item {
-    flex: 1 0 calc((100% - 10px)/2);
-
-    &:nth-child(4n) {
-      margin-right: 10px;
-    }
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+    width: 100%;
   }
 }
 
-@media(max-width:650px) {
-  .task1__item {
-    flex: 1 0 100%;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-}
