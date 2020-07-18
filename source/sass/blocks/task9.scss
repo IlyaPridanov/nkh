@@ -1,0 +1,58 @@
+.task9__button {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-right: 35px;
+  width: 270px;
+  max-width: 100%;
+
+  border-radius: 7px;
+  border: 1px solid $white;
+  background-color: $secondary-color-1;
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%) rotate(90deg);
+    transition: all 0.5s ease-in;
+  }
+
+  &--active {
+    & svg {
+      transform: translateY(-50%) rotate(-90deg);
+      transition: all 0.5s ease-in;
+    }
+  }
+}
+
+.task9__list {
+  @include list();
+  // height: 0;
+  max-height: 0;
+
+  opacity: 0;
+  transition: all 0.5s ease-in; 
+
+  &--active {
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: all 0.5s ease-in; 
+  }
+}
+
+.task9__item {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 270px;
+  max-width: 100%;
+
+  text-align: center;
+
+  border-radius: 7px;
+  border: 1px solid $white;
+  background-color: $secondary-color-1;
+}

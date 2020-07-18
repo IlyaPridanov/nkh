@@ -1,0 +1,34 @@
+.task2-4__list {
+  @include list();
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  height: 300vh;
+  margin-right: -10px;
+}
+
+.task2-4__item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  max-width: 100%;
+
+  &--test {
+    align-self: flex-start;
+  }
+}
+
+@media(max-width:1050px) {
+  .task2-4__list {
+    display: block;
+  }
+
+  .task2-4__item {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,37 @@
+.task7__table {
+  width: 100%;
+}
+
+.task7__table .task7__cell {
+  width: 25%;
+  
+  vertical-align: top;
+
+  border: none;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  &:nth-child(4n) {
+    border-right: none;
+  }
+}
+
+@media(max-width:1050px) {
+  .task7__table {
+    display: block;
+  }
+
+  .task7__row {
+    display: block;
+  }
+
+  .task7__table .task7__cell {
+    display: block;
+    width: 100%;
+
+    border-right: none;
+  }
+}
+
+  
+  

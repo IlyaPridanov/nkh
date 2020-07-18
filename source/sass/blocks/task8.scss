@@ -1,0 +1,43 @@
+.task8__table {
+  display: table;
+  width: 100%;
+}
+
+.task8__row {
+  display: table-row;
+}
+
+.task8__table .task8__cell {
+  display: table-cell;
+  width: 25%;
+  
+  vertical-align: top;
+
+  border: none;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  &:nth-child(4n) {
+    border-right: none;
+  }
+}
+
+@media(max-width:1050px) {
+  .task8__table {
+    display: block;
+  }
+
+  .task8__row {
+    display: block;
+  }
+
+  .task8__table .task8__cell {
+    display: block;
+    width: 100%;
+
+    border-right: none;
+  }
+}
+
+  
+  

@@ -1,23 +1,30 @@
-.task1__list {
+.task6__list {
   @include list();
 
-  display: flex;
-  flex-wrap: wrap;
+  clear: both;
 }
 
-.task1__item {
+.task6__item {
+  display: flex;
+  flex-direction: column;
+  float: left;
   margin-bottom: 10px;
   margin-right: 10px;
   width: calc((100% - 30px)/4);
   max-width: 100%;
+  min-height: 545px;
 
   &:nth-child(4n) {
     margin-right: 0;
   }
+
+  & a {
+    margin-top: auto;
+  }
 }
 
 @media(max-width:1050px) {
-  .task1__item {
+  .task6__item {
     width: calc((100% - 10px)/2);
   
     &:nth-child(2n) {
@@ -27,13 +34,11 @@
 }
 
 @media(max-width:650px) {
-  .task1__list {
-    display: block;
-  }
-
-  .task1__item {
+  .task6__item {
+    float: none;
     margin-right: 0;
     width: 100%;
   }
 }
-
+  
+  
